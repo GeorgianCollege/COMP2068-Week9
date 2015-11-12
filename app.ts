@@ -1,16 +1,5 @@
-// PERSON CLASS ++++++++++++++++++++++++++++++++
-class Person {
-	private _name:string;
-	// CONSTRUCTOR ++++++++++++++++++++++++++++++
-	constructor(name:string) {
-		this._name = name;
-	}
-	
-	// PUBLIC METHODS +++++++++++++++++++++++++++
-	public sayName():void {
-		console.log("Your name is: " + this._name);
-	}
-}
+/// <reference path="objects/person.ts" />
 
-var tom = new Person("Tom");
+
+var tom = new objects.Person("Tom", 46, 200);
 tom.sayName();
